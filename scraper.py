@@ -100,7 +100,7 @@ def scrape_biz(url):
             break
 
         return {'name': name, 'phone': phone, 'email': email}
-    except:
+    except Exception:
         return None
 
 def scrape():
