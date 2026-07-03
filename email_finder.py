@@ -28,7 +28,7 @@ def google_search_email(name, city):
                 if domain not in SKIP_DOMAINS and 'google' not in domain:
                     return e.lower()
             time.sleep(random.uniform(2, 4))
-        except:
+        except Exception:
             pass
     return None
 
